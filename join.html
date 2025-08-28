@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dance Institute Registration</title>
+</head>
+<body>
+  
+  <h1>💃😍 Dance Institute Registration Form</h1>
+
+  <form action="file:///C:/Users/tembu/OneDrive/Desktop/login%20form/thank.html" method="post" validate>
+    
+    <!-- Personal Info with Fieldset -->
+     
+    <fieldset><!--groups related form-->
+      <legend>👤 Personal Information</legend>
+
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname" required><br><br>
+
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone"><br><br>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob"><br><br>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="5" max="60"><br><br>
+
+      <label for="countries">choose country:</label>
+        <select id="countries" name="place" size="2" multiple>
+            <option value="0">India</option>
+            <option value="1">Afghanistan</option>
+            <option value="2">Bangladesh</option>
+            <option value="3">china</option>
+            <option value="4">Italy</option>
+            <option value="5">Japan</option>
+        </select><br><br>
+
+      <label for="website">Portfolio (optional):</label>
+      <input type="url" id="website" name="website"><br><br>
+
+      <label for="gender">Gender:</label><br>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label><br><br>
+    </fieldset><br>
+
+    <!-- Address and Comments -->
+    <fieldset>
+      <legend>🏠 Address</legend>
+
+      <label for="address">Full Address:</label><br>
+      <textarea id="text" name="address" rows="4" cols="50" placeholder="Street, City, State, PIN"></textarea><br><br>
+    </fieldset><br>
+
+    <!-- Dance Details -->
+
+
+
+
+    
+    <fieldset>
+      <legend>💃 Dance Preferences</legend>
+
+      <label for="style">Choose Dance Style:</label>
+      <select id="style" name="style"> <!--to create a drop down menu-->
+        <optgroup label="Classical"> <!--groups related options with a label-->
+          <option value="kuchipudi">Kuchipudi</option><!--is each item in the menu-->
+          <option value="bharatanatyam">Bharatanatyam</option>
+        </optgroup>
+        <optgroup label="Western">
+          <option value="hiphop">Hip Hop</option>
+          <option value="freestyle">Freestyle</option>
+        </optgroup>
+      </select><br><br>
+
+
+
+      <label>Days Available:</label><br>
+      <input type="checkbox" name="days" value="Mon"> Monday
+      <input type="checkbox" name="days" value="Wed"> Wednesday
+      <input type="checkbox" name="days" value="Fri"> Friday<br><br>
+
+      <label for="timing">Preferred Time:</label>
+      <input type="time" id="timing" name="timing"><br><br>
+
+      <label for="startdate">Start Date:</label>
+      <input type="datetime-local" id="startdate" name="startdate"><br><br>
+
+      <label for="intensity">Dance Interest Level (1-10):</label>
+      <input type="range" id="intensity" name="intensity" min="1" max="10"><br><br>
+
+      <label for="color">Preferred Costume Color:</label>
+      <input type="color" id="color" name="color"><br><br>
+
+      <label for="certificate">Upload Previous Certificate (if any):</label>
+      <input type="file" id="certificate" name="certificate" multiple><br><br>
+    </fieldset><br>
+
+    <!-- Fee Structure (using Table) -->
+    <fieldset>
+      <legend>📋 Fee Structure</legend>
+      <table border="5" cellpadding="6" cellspacing="0">
+        <tr>
+          <th>Dance Style</th>
+          <th>Level</th>
+          <th>Fee (INR)</th>
+        </tr>
+        <tr>
+          <td>Kuchipudi</td>
+          <td>Beginner</td>
+          <td>3000</td>
+        </tr>
+        <tr>
+          <td>Bharatanatyam</td>
+          <td>Intermediate</td>
+          <td>4000</td>
+        </tr>
+        <tr>
+          <td>Hip Hop</td>
+          <td>Advanced</td>
+          <td>5000</td>
+        </tr>
+      </table>
+    </fieldset><br>
+
+    <!-- Payment & Final Section -->
+    <fieldset>
+      <legend>💳 Payment & Terms</legend>
+
+      <label for="payment">Payment Method:</label><br>
+      <input type="radio" name="payment" value="upi"> UPI
+      <input type="radio" name="payment" value="card"> Card
+      <input type="radio" name="payment" value="cash"> Cash<br><br>
+
+      <label for="ref">How did you hear about us?</label>
+      <input type="text" id="ref" name="ref" list="sources"><!--input uses list to connect to datalist-->
+      <datalist id="sources">
+        <option value="Instagram">
+        <option value="Friend">
+        <option value="Google Search">
+        <option value="Flyer">
+      </datalist><br><br>
+      
+
+      <label for="agree">I agree to the terms and conditions</label>
+      <input type="checkbox" id="agree" name="agree" required><br><br>
+    </fieldset><br>
+
+    <!-- Buttons -->
+    <input type="submit" value="Submit">
+    <input type="reset" value="Clear Form">
+    <button type="button" onclick="alert('Thanks for visiting!')">Click Me</button>
+
+  </form>
+
+</body>
+</html>
